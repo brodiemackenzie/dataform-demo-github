@@ -1,5 +1,5 @@
 defaultProject: hdev2-demo
 defaultLocation: US
-defaultDataset: thelook_ecommerce_dev
+defaultDataset: thelook_ecommerce
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
