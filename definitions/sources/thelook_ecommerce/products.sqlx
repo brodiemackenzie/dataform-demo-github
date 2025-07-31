@@ -1,6 +1,6 @@
 config {
   type: "declaration",
-  database: "hprod2-demo",
-  schema: "thelook_ecommerce_RAW",
+  database: "hdev2-demo",
+  schema: "thelook_ecommerce_RAW_DEV",
   name: "products",
 }
