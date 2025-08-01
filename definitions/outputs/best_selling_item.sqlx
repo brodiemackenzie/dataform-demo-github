@@ -4,10 +4,6 @@ config {
     schema: "thelook_ecommerce_REP"
 }
 
-js {
-  let source_schema = functions.build_source_schema_from_env()
-}
-
 SELECT
   oi.product_id AS product_id,
   p.name AS product_name,
@@ -15,9 +11,9 @@ SELECT
   p.brand AS product_brand,
   COUNT(*) AS num_of_orders
 FROM
-  `${database()}.${source_schema}.products` AS p
+  ${ref("products")} AS p
 JOIN
-  `${database()}.${source_schema}.order_items` AS oi
+  ${ref("order_items")} AS oi
 ON
   p.id = oi.product_id
 GROUP BY

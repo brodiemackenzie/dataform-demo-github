@@ -1,6 +1,6 @@
 config {
   type: "declaration",
-  database: "hdev2-demo",
-  schema: "thelook_ecommerce_RAW_DEV",
+  database: dataform.projectConfig.vars.projectVar,
+  schema: "thelook_ecommerce_RAW_"+dataform.projectConfig.vars.env,
   name: "products",
 }
