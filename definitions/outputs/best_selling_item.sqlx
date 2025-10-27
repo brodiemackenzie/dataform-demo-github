@@ -11,9 +11,9 @@ SELECT
   p.brand AS product_brand,
   COUNT(*) AS num_of_orders
 FROM
-  ${ref("products")} AS p
+  ${ref("products"+dataform.projectConfig.vars.sourceNameSuffix)} AS p
 JOIN
-  ${ref("order_items")} AS oi
+  ${ref("order_items"+dataform.projectConfig.vars.sourceNameSuffix)} AS oi
 ON
   p.id = oi.product_id
 GROUP BY
