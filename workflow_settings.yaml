@@ -1,7 +1,8 @@
 defaultProject: hdev2-demo
 defaultLocation: US
-defaultDataset: thelook_ecommerce_RAW
+defaultDataset: development
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
 vars:
-  env: DEV
+  sourceSchema: thelook_ecommerce_RAW_DEV
+  sourceNameSuffix: _DEV
